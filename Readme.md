@@ -58,3 +58,10 @@ Visit `http://localhost:8000/docs` for interactive Swagger documentation.
 ```bash
 git clone https://github.com/kalai2000/Take-Home-Movie-recommendation.git
 cd Take-Home-Movie-recommendation
+```
+
+
+### 2. Build the docker image 
+```bash
+docker compose up --build
+```
