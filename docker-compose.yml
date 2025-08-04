@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./fastpi-poject  # ⚠️ Make sure this folder name is correct!
+    container_name: fastapi-backend
+    ports:
+      - "8000:8000"
+    networks:
+      - fullstack-net
+
+  frontend:
+    build: ./client/vite-project
+    container_name: react-frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - fullstack-net
+    environment:
+      - VITE_BASE_URL=http://localhost:8000
+
+networks:
+  fullstack-net:
