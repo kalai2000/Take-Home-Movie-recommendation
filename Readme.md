@@ -51,7 +51,7 @@ Visit `http://localhost:8000/docs` for interactive Swagger documentation.
 
 ---
 
-## 🐳 Docker Setup
+## 🐳 Docker Setup - Make sure your engine is running before anything
 
 ### 1. Clone the Repository
 
@@ -64,4 +64,9 @@ cd Take-Home-Movie-recommendation
 ### 2. Build the docker image 
 ```bash
 docker compose up --build
+```
+
+### 3. check in the below URL 
+```bash
+http://localhost:5173/
 ```
